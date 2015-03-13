@@ -185,21 +185,21 @@ type (
 		Field string `json:"field,omitempty"`
 		Issue string `json:"issue,omitempty"`
 	}
-    
+
 	// Vault maps to the vault object
 	Vault struct {
-        ID             string       `json:"id,omitempty"`
-		ValidUntil             string       `json:"valid_until,omitempty"`
-		State          CaptureState `json:"state,omitempty"`
-		PayerID             string       `json:"payer_id,omitempty"`
-		Number         string          `json:"number"`
-		Type           string          `json:"type"`
-		ExpireMonth    string          `json:"expire_month"`
-		ExpireYear     string          `json:"expire_year"`
-		FirstName      string          `json:"first_name,omitempty"`
-		LastName       string          `json:"last_name,omitempty"`        
-		Links          []Links      `json:"links,omitempty"`
-	}   
+		ID          string       `json:"id,omitempty"`
+		ValidUntil  string       `json:"valid_until,omitempty"`
+		State       CaptureState `json:"state,omitempty"`
+		PayerID     string       `json:"payer_id,omitempty"`
+		Number      string       `json:"number"`
+		Type        string       `json:"type"`
+		ExpireMonth string       `json:"expire_month"`
+		ExpireYear  string       `json:"expire_year"`
+		FirstName   string       `json:"first_name,omitempty"`
+		LastName    string       `json:"last_name,omitempty"`
+		Links       []Links      `json:"links,omitempty"`
+	}
 
 	// CreditCard maps to credit_card object
 	CreditCard struct {
@@ -296,13 +296,13 @@ type (
 		UpdateTime          *time.Time     `json:"update_time,omitempty"`
 		ExperienceProfileID string         `json:"experience_profile_id,omitempty"`
 	}
-    
+
 	// Payment maps to payment object
 	PaymentVault struct {
-		Intent              PaymentIntent  `json:"intent"`
-		Payer               *Payer         `json:"payer"`
-		Transactions        []Transaction  `json:"transactions"`
-	}    
+		Intent       PaymentIntent `json:"intent"`
+		Payer        *Payer        `json:"payer"`
+		Transactions []Transaction `json:"transactions"`
+	}
 
 	// PaymentExecution maps to payment_execution object
 	PaymentExecution struct {
