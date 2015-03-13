@@ -15,7 +15,7 @@ func (c *Client) StoreCreditCard(cc *CreditCard) (*Vault, error) {
 		CVV2        string `json:"cvv2"`
 		FirstName   string `json:"first_name"`
 		LastName    string `json:"last_name"`
-	}{cc.PayerID, cc.Number, cc.Type, cc.ExpireMonth, cc.ExpireYear, cc.CVV2, cc.FirstName, cc.Lastname})
+	}{cc.PayerID, cc.Number, cc.Type, cc.ExpireMonth, cc.ExpireYear, cc.CVV2, cc.FirstName, cc.LastName})
 
 	if err != nil {
 		return nil, err
